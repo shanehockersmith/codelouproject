@@ -1,0 +1,76 @@
+header {
+width: 50%;
+
+}
+
+html, 
+body {
+	height: 100%;
+
+}
+
+body {
+	margin: 0;
+	background-color: #55aefa;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+
+
+.mainnav {
+	display: flex;
+
+}
+
+.giantmooseimg {
+  width: 100%;
+  position: center;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer {
+	display: flex;
+	flex: 1;
+
+}
+
+
+
+/* Media queries========================= */
+
+@media (max-width: 500px) {
+	
+	* {
+		box-sizing: border-box;
+		padding: 5px;
+		margin: 0;
+	}
+
+	.mainnav {
+		font-size: 32px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}
+
+@media (min-width: 481px) {
+	.mainnav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-left: -25px;
+	}
+
+}

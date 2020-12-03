@@ -26,7 +26,6 @@ body {
 
 .giantmooseimg {
   width: 100%;
-  position: center;
   background-repeat: none;
 }
 
@@ -94,6 +93,7 @@ body {
 
 	.containerMain {
 		flex-wrap: nonwrap;
+		flex-direction: column;
 	}
 	
 	.contentMain {

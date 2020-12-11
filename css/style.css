@@ -10,11 +10,14 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	margin-left: 0;
+	list-style: none;
+
 }
 
 a {
 	color: white;
 	text-decoration: none;
+	
 }
 
 body {
@@ -25,8 +28,12 @@ body {
 }
 
 .giantmooseimg {
-  width: 100%;
-  background-repeat: none;
+	display: block;
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto; 
+  	background-image: none;
+  	background-repeat: none;
 }
 
 /* Footer ========================== */
@@ -46,7 +53,7 @@ body {
 	color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+	justify-content: center;
 }
 
 .contentMain {
@@ -55,15 +62,26 @@ body {
 	padding-right: 20px;
 	margin-left: 10px;
 	margin-right: 10px;
+	font-size: 1.25em;
+	text-align: center;
 }
 
 /* Music page ====================== */
 
+.containerMusic {
+	color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
-
-
-
+.contentMusic {
+	width: 33%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
 /* Tour Page ======================= */
 
@@ -71,8 +89,15 @@ body {
 	list-style: none;
 	text-align: center;
 	color: white;
+	display: inline;
 }
 
+.tour {
+	text-align: center;
+	color: white;
+	font-size: 3em;
+	margin: auto;
+}
 
 /* Media queries========================= */
 
@@ -99,4 +124,35 @@ body {
 	.contentMain {
 	width: 100%;
 	}
+
+	.containerMusic {
+		flex-wrap: nonwrap;
+		flex-direction: column;
+	}
+	
+	.contentMusic {
+	width: 100%;
+	}
+}
+
+@media (min-width: 1250px) {
+	.mainnav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-left: 0;
+		list-style: none;
+		font-size: 2em;
+	}
+
+	.giantmooseimg {
+		display: block;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto; 
+		  background-image: none;
+		  background-repeat: none;
+	}
+
+
 }

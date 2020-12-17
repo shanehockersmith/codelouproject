@@ -14,10 +14,14 @@ body {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	margin-left: 0;
 	list-style: none;
-	padding-bottom: 10px;
+	background-color: #55aefa;
+	padding-bottom: 12px;
+	padding-top: 12px;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+	/* position: fixed;
+	top: -20px;
+	width: 100%; */
 }
 
 .mainnav a {
@@ -107,7 +111,8 @@ body {
 	margin-right: auto;
 	margin-left: auto; 
   	background-image: none;
-  	background-repeat: none;
+	background-repeat: none;
+
 }
 
 .dates {

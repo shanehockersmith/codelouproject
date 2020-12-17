@@ -6,12 +6,18 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.contentWrap {
+	padding-bottom: 2.5rem;
+}
+
 .mainnav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	margin-left: 0;
 	list-style: none;
+	padding-bottom: 10px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .mainnav a {
@@ -44,12 +50,12 @@ body {
 /* Footer ========================== */
 
 .footer {
-	width: 100%;
-	background-color: #46a6fa;
 	color: white;
 	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
   }
 
 /* Home page ======================= */
@@ -108,7 +114,9 @@ body {
 	list-style: none;
 	text-align: center;
 	color: white;
-	display: inline;
+	display: block;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .tour {
@@ -119,8 +127,8 @@ body {
 	margin: auto;
 }
 
-.dates:nth-of-type(even) {
-	color: #ef6fab;
+.dates li:nth-child(even) {
+	background-color: #ef6fab;
 }
 
 /*About/Contact========================= */
@@ -131,14 +139,19 @@ body {
 	text-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 	font-size: 3em;
 	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .aboutSection {
 	width: 75%;
 	color: white;
-	text-align: center;
+	text-align: left;
 	margin: auto;
-
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .contact {
@@ -148,6 +161,8 @@ body {
 	text-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 	font-size: 3em;
 	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 input[type=text], select, textarea {
@@ -160,7 +175,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-	background-color: #4CAF50;
+	background-color: #ef6fab;
 	color: white;
 	padding: 12px 20px;
 	border: none;
@@ -170,7 +185,7 @@ input[type=submit] {
   }
 
 input[type=submit]:hover {
-	background-color: #45a049;
+	background-color: #bd4a7f;
   }
 
   .contactContainer {
@@ -183,7 +198,7 @@ input[type=submit]:hover {
 
 @media (max-width: 600px) {
 	* {
-		box-sizing: border-box;
+		box-sizing: initial;
 		padding: 5px;
 		margin: 0;
 	}
@@ -192,8 +207,11 @@ input[type=submit]:hover {
 		font-size: 32px;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
+		width: 100%;
+		padding-bottom: 10px;
+		box-shadow: none;
 	}
 
 	.containerMain {
@@ -216,6 +234,8 @@ input[type=submit]:hover {
 	
 }
 
+/* Full Screen ======================= */
+
 @media (min-width: 1250px) {
 	.mainnav {
 		display: flex;
@@ -235,7 +255,7 @@ input[type=submit]:hover {
 		background-repeat: none;
 	}
 
-/* Tour Page ======================= */
+/* Full Screen Tour Page ======================= */
 
 	.band-live {
 		width: 60%;
@@ -246,7 +266,7 @@ input[type=submit]:hover {
 		background-repeat: none;
 	}
 
-/*About/Contact========================= */	
+/* Full Screen About/Contact========================= */	
 
 	.contactContainer {
 		border-radius: 5px;

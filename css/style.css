@@ -144,6 +144,10 @@ body {
 .dates li:nth-child(even) {
 	background-color: #ef6fab;
 }
+.dates li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 /*About/Contact========================= */
 
